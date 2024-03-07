@@ -28,7 +28,7 @@
 
         skillItems.forEach((item) => {
           const wrapperDiv = document.createElement("div");
-          wrapperDiv.className = "transform hover:scale-105 transition duration-500 w-1/2 lg:w-1/3 md:w-1/2 mx-auto";
+          wrapperDiv.className = "transform hover:scale-105 transition duration-500 w-full lg:w-1/3 md:w-1/2 m-3 lg:m-0 lg:mx-auto";
 
           const div = document.createElement("div");
           div.className = "max-w-sm p-4 bg-" + item.color + " rounded-xl h-44 m-2 lg:m-0 lg:mx-auto";
@@ -47,14 +47,14 @@
           titleLink.href = "#";
 
           const title = document.createElement("h5");
-          title.className = "mb-1 text-xs lg:text-xl font-bold text-center ";
+          title.className = "mb-1 text-lg lg:text-xl font-bold text-center ";
           title.textContent = item.title;
 
           titleLink.appendChild(title);
           div.appendChild(titleLink);
 
           const description = document.createElement("p");
-          description.className = "font-light text-xs lg:text-md mb-2 text-center";
+          description.className = "font-light text-sm text-[#6f5d4b] lg:text-md mb-2 text-center";
           description.textContent = item.description;
 
           div.appendChild(description);
@@ -83,9 +83,9 @@
         portfolioItemsContainer.innerHTML = "";
         items.forEach((item) => {
           const portfolioItem = document.createElement("div");
-          portfolioItem.classList.add("w-full", "px-4", "lg:w-1/3", "xl:w-1/4", "m-1", "lg:m-0");
+          portfolioItem.classList.add("w-full", "px-4", "lg:w-1/3", "xl:w-1/4", "m-3", "lg:m-0");
           portfolioItem.innerHTML = `
-            <div class="bg-white px-4 pt-4 pb-2 rounded-xl transform hover:scale-105 transition duration-500">
+            <div class="bg-white px-4 pt-4 pb-5 rounded-xl transform hover:scale-105 transition duration-500">
               <div class="relative">
                 <img class="w-full object-cover h-40 rounded-xl" src="${item.imageUrl}" alt="Portfolio Item" />
                 <p class="absolute text-xs top-1 right-1 bg-gray-950/50 text-white font-light py-1 px-3 rounded-xl">${item.category}</p>
