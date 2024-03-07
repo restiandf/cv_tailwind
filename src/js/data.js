@@ -34,19 +34,19 @@ const portfolioItems = [
     {
       icon: "src/img/layers.png",
       title: "UI/UX",
-      color: "blue",
+      color: "[#f0f0eb]",
       description: "Web & App Design, Prototyping, Design System.",
     },
     {
       icon: "src/img/coding.png",
       title: "Development",
-      color: "orange",
+      color: "[#f0f0eb]",
       description: "HTML, JS, CSS, PHP, Tailwind CSS, Boostrap, MySQL",
     },
     {
       icon: "src/img/vector.png",
       title: "Graphic Design",
-      color: "sky",
+      color: "[#f0f0eb]",
       description: "CorelDraw, Poster, Resume Design, Banner, etc",
     },
     

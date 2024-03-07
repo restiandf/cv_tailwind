@@ -31,7 +31,7 @@
           wrapperDiv.className = "transform hover:scale-105 transition duration-500 w-1/2 lg:w-1/3 md:w-1/2 mx-auto";
 
           const div = document.createElement("div");
-          div.className = "max-w-sm p-4 bg-" + item.color + "-500 rounded-xl h-44 m-2 lg:m-0 lg:mx-auto";
+          div.className = "max-w-sm p-4 bg-" + item.color + " rounded-xl h-44 m-2 lg:m-0 lg:mx-auto";
 
           const iconDiv = document.createElement("div");
           iconDiv.className = "icon inline-block text-center w-full";
@@ -47,14 +47,14 @@
           titleLink.href = "#";
 
           const title = document.createElement("h5");
-          title.className = "mb-1 text-xs lg:text-xl font-bold text-white text-center ";
+          title.className = "mb-1 text-xs lg:text-xl font-bold text-center ";
           title.textContent = item.title;
 
           titleLink.appendChild(title);
           div.appendChild(titleLink);
 
           const description = document.createElement("p");
-          description.className = "font-light text-xs lg:text-md mb-2 text-white text-center";
+          description.className = "font-light text-xs lg:text-md mb-2 text-center";
           description.textContent = item.description;
 
           div.appendChild(description);
